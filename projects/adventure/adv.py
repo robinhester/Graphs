@@ -23,10 +23,18 @@ world.load_graph(room_graph)
 # Print an ASCII map
 world.print_rooms()
 
-player = Player(world.starting_room)
+player = Player(world.starting_room
+"""
+My Plan:
+We need to set up a director for the player.
+Then loop through all the exits, after that
+set it up so that if the player has already visited a room 
+to turn around. If the player has not been to this room, 
+Then add the new path and update the status to the new one
+using recursion. Then return that path and 
+fill in the traversal path with the bfs function
+"""
 
-# Fill this out with directions to walk
-# traversal_path = ['n', 'n']
 """
 traversal_path = []
 
@@ -85,16 +93,7 @@ class Path_Taken:
 
 traversal_path = Path_Taken().rt(player.current_room)
 
-"""
-My Plan:
-We need to set up a director for the player.
-Then loop through all the exits, after that
-set it up so that if the player has already visited a room 
-to turn around. If the player has not been to this room, 
-Then add the new path and update the status to the new one
-using recursion. Then return that path and 
-fill in the traversal path with the bfs function
-"""
+
 
 
 
