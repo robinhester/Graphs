@@ -55,6 +55,7 @@ while len(visited) > len(room_graph):
         player.travel(d)
 
 """
+# third route
 o = { 'n': 's', 's': 'n', 'e': 'w','w': 'e'}
 
 class Path_Taken:
