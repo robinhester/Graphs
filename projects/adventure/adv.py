@@ -55,12 +55,7 @@ while len(visited) > len(room_graph):
         player.travel(d)
 
 """
-opposite_directions = {
-                        'n': 's', 
-                        's': 'n', 
-                        'e': 'w',
-                        'w': 'e'
-                        }
+o = { 'n': 's', 's': 'n', 'e': 'w','w': 'e'}
 
 class Path_Taken:
 
@@ -77,11 +72,11 @@ class Path_Taken:
                 if unvisited:
                     current = [room_exit] + \
                                    unvisited + \
-                                   [opposite_directions[room_exit]]
+                                   [o[room_exit]]
                 else:
                     current = [
                         room_exit, 
-                        opposite_directions[room_exit]
+                        o[room_exit]
                         ]
                 taken_path = taken_path + \
                              current
